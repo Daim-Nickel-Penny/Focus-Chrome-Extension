@@ -1,5 +1,5 @@
 async function getBase64ImageFromURl(imageUrl) {
-  var image_url = "https://img-proxy.gaikanomer9.com/" + imageUrl;
+  var image_url = BASE_URL + imageUrl;
   var res = await fetch(image_url);
   var blob = await res.blob();
 
@@ -23,7 +23,7 @@ async function getBase64ImageFromURl(imageUrl) {
 }
 
 function processnewLoad() {
-  fetch("https://nasa-plugin.gaikanomer9.com/api/v1/random-picture/")
+  fetch(BASE_URL)
     .then((response) => response.json())
     .then((data) => {
       img_url = data.hdurl;
