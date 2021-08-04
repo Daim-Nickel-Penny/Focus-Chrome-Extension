@@ -1,0 +1,14 @@
+{
+  "name": "Focus Chrome Home",
+  "description": "Chrome Home page that shows new backgroundvimages",
+  "version": "1.0",
+  "incognito": "split",
+  "permissions": ["storage"],
+  "chrome_url_overrides": {
+    "newtab": "home.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}

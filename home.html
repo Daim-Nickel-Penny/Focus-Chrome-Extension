@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Star task</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+      }
+
+      .bgimg-1 {
+        position: relative;
+        opacity: 0.85;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .bgimg-1 {
+        height: 100%;
+      }
+      .caption {
+        position: relative;
+        top: 45%;
+        width: 25%;
+        margin: auto;
+        text-align: center;
+        color: #000;
+        opacity: 0.75;
+        background-color: #111;
+        padding: 25px;
+      }
+      span.border {
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 10px;
+      }
+      /* Tooltip container */
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+      }
+
+      /* Tooltip text */
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120%;
+        top: -50%;
+        left: 95%;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+      }
+
+      /* Show the tooltip text when you mouse over the tooltip container */
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    </style>
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <div class="bgimg-1">
+      <div class="caption">
+        <div class="tooltip">
+          <span class="border" id="title"></span><br />
+          <span class="tooltiptext" id="tooltip"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
